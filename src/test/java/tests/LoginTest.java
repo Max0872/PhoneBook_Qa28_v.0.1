@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +15,6 @@ public class LoginTest extends TestBase{
     public void loginTestPositiveNewContact(){
         app.userHelper().click(By.xpath("//a[.='LOGIN']"));
         app.userHelper().type(By.xpath("//input[@placeholder='Email']"),"noa@gmail.com");
-       // type(By.xpath("//input[1]"),"noa@gmail.com");
         app.userHelper().type(By.xpath("//input[@placeholder='Password']"),"Nnoa12345$");
         app.userHelper().click(By.xpath("//button[.=' Login']"));
         app.userHelper().pause(2000);
@@ -24,6 +24,20 @@ public class LoginTest extends TestBase{
         String loginS = app.userHelper().getText(By.xpath("//a[.='ADD']"));
 
         Assert.assertEquals(loginS,"ADD");
+
+    }
+
+    @Test
+    public void loginTestWithWrongPassword(){
+        User user= new User()
+                .withEmail("noa@gmail.com")
+                .withPassword("Nnoa12345");
+        app.userHelper().openLoginRegForm();
+        app.userHelper().fillLoginRegForm(user);
+        app.userHelper().clickLoginButton();
+       // app.userHelper().pause(5000);
+        app.userHelper().acceptAlert();
+        Assert.assertFalse(app.userHelper().isLogged());
 
     }
 }
