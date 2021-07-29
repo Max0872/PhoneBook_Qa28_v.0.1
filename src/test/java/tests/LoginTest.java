@@ -3,17 +3,26 @@ package tests;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase{
 
-
+@BeforeMethod
+public void precondition(){
+    if(app.userHelper().isLogged()){
+        app.userHelper().logout();
+    }
+}
 
 
 
     @Test
     public void loginTestPositiveNewContact(){
-        app.userHelper().click(By.xpath("//a[.='LOGIN']"));
+      app.userHelper().click(By.xpath("//a[.='LOGIN']"));
+        //app.userHelper().click(By.xpath(""));
         app.userHelper().type(By.xpath("//input[@placeholder='Email']"),"noa@gmail.com");
         app.userHelper().type(By.xpath("//input[@placeholder='Password']"),"Nnoa12345$");
         app.userHelper().click(By.xpath("//button[.=' Login']"));

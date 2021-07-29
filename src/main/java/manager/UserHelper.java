@@ -34,4 +34,8 @@ public class UserHelper extends HelperBase{
     public boolean isLogged() {
         return wd.findElements(By.xpath("//button[text()='Sign Out']")).size()>0;
     }
+
+    public void logout() {
+        click(By.xpath("//button[text()='Sign Out']"));
+    }
 }
