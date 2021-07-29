@@ -11,13 +11,13 @@ public class TestBase {
 
    protected static AppManager app = new AppManager(System.getProperty("browser", BrowserType.CHROME));
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void init() {
        app.start();
     }
 
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDown() {
        app.stop();
     }
