@@ -1,12 +1,14 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class LoginTest extends TestBase{
 
@@ -41,12 +43,75 @@ public void precondition(){
         User user= new User()
                 .withEmail("noa@gmail.com")
                 .withPassword("Nnoa12345");
+
         app.userHelper().openLoginRegForm();
         app.userHelper().fillLoginRegForm(user);
         app.userHelper().clickLoginButton();
-       // app.userHelper().pause(5000);
+
         app.userHelper().acceptAlert();
         Assert.assertFalse(app.userHelper().isLogged());
+
+    }
+
+    @Test
+    public void loginTestBase(){
+        User user= new User()
+                .withEmail("noa@gmail.com")
+                .withPassword("Nnoa12345$");
+
+        app.userHelper().openLoginRegForm();
+        app.userHelper().fillLoginRegForm(user);
+        app.userHelper().clickLoginButton();
+
+        Assert.assertTrue(app.userHelper().isLogged());
+
+    }
+    @DataProvider
+    public Iterator <Object[] > validDataLogin(){
+        List<Object[]> list= new ArrayList<>();
+        list.add(new Object[]{"noa@gmail.com","Nnoa12345$"});
+        list.add(new Object[]{"sonya@gmail.com","Ss12345$"});
+        list.add(new Object[]{"noa@gmail.com","Nnoa12345$"});
+
+        return list.iterator();
+    }
+
+
+
+
+    @Test(dataProvider = "validDataLogin")
+    public void loginTestDataProvider(String email, String password){
+        User user= new User()
+                .withEmail(email)
+                .withPassword(password);
+        app.userHelper().openLoginRegForm();
+        app.userHelper().fillLoginRegForm(user);
+        app.userHelper().clickLoginButton();
+        app.userHelper().pause(2000);
+        Assert.assertTrue(app.userHelper().isLogged());
+
+    }
+    @Test(dataProvider = "validLoginDataClassDP", dataProviderClass = MyDataProvider.class)
+    public void loginTestDataProviderClass(String email, String password){
+        User user= new User()
+                .withEmail(email)
+                .withPassword(password);
+        app.userHelper().openLoginRegForm();
+        app.userHelper().fillLoginRegForm(user);
+        app.userHelper().clickLoginButton();
+        app.userHelper().pause(2000);
+        Assert.assertTrue(app.userHelper().isLogged());
+
+    }
+    @Test(dataProvider = "dataFileCSV", dataProviderClass = MyDataProvider.class)
+    public void loginTestDP_CSV(User user){
+
+
+        app.userHelper().openLoginRegForm();
+        app.userHelper().fillLoginRegForm(user);
+        app.userHelper().clickLoginButton();
+
+        Assert.assertTrue(app.userHelper().isLogged());
 
     }
 }
