@@ -41,4 +41,12 @@ public class UserHelper extends HelperBase{
                 .until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath("//button[text()='Sign Out']"))));
         click(By.xpath("//button[text()='Sign Out']"));
     }
+
+    public void login(User user) {
+        openLoginRegForm();
+        fillLoginRegForm(user);
+        clickLoginButton();
+        pause(1000);
+
+    }
 }
