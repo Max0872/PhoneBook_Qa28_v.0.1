@@ -25,9 +25,9 @@ public class MyDataProvider {
     public Iterator<Object[] > dataContactDP(){
         List<Object[]> list= new ArrayList<>();
         //Mona,Dow,9877776543,dow@gmail.com,Haifa Herzel3,university friend
-        list.add(new Object[]{"Mona","Dow","9877776500","dow77@gmail.co","Haifa Herzel3","university friend"});
-        list.add(new Object[]{"Mona","Dow","9817776500","dow78@gmail.co","Haifa Herzel3","university friend"});
-        list.add(new Object[]{"Mona","Dow","9827776500","dow79@gmail.co","Haifa Herzel3","university friend"});
+        list.add(new Object[]{"Mona","Dow","9177776500","dow80@gmail.co","Haifa Herzel3","university friend"});
+        list.add(new Object[]{"Mona","Dow","9117776501","dow81@gmail.co","Haifa Herzel3","university friend"});
+        list.add(new Object[]{"Mona","Dow","9117776502","dow82@gmail.co","Haifa Herzel3","university friend"});
 
 
         return list.iterator();

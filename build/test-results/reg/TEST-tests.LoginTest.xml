@@ -1,40 +1,19 @@
-13:01:11.219  INFO  manager.AppManager - Start in browser FIREFOX
-13:01:12.450  INFO  tests.TestBase - Start method -->smokeTest
-13:01:12.453  INFO  tests.TestBase - Test Start with Data -->[]
-13:01:12.454  INFO  tests.TestBase - ==================================================================
-13:01:12.465  INFO  tests.TestBase - End of method -->smokeTest
-13:01:12.470  INFO  tests.TestBase - Start method -->quicktest
-13:01:12.470  INFO  tests.TestBase - Test Start with Data -->[]
-13:01:12.472  INFO  tests.TestBase - ==================================================================
-13:01:12.475  INFO  tests.TestBase - End of method -->quicktest
-13:02:36.572  INFO  manager.AppManager - Start in browser FIREFOX
-13:02:37.844  INFO  tests.TestBase - Start method -->smokeTest
-13:02:37.846  INFO  tests.TestBase - Test Start with Data -->[]
-13:02:37.846  INFO  tests.TestBase - ==================================================================
-13:02:37.862  INFO  tests.TestBase - End of method -->smokeTest
-13:02:37.876  INFO  tests.TestBase - Start method -->quicktest
-13:02:37.876  INFO  tests.TestBase - Test Start with Data -->[]
-13:02:37.878  INFO  tests.TestBase - ==================================================================
-13:02:37.881  INFO  tests.TestBase - End of method -->quicktest
-13:03:49.055  INFO  manager.AppManager - Start in browser FIREFOX
-13:03:50.459  INFO  tests.TestBase - Start method -->smokeTest
-13:03:50.460  INFO  tests.TestBase - Test Start with Data -->[]
-13:03:50.460  INFO  tests.TestBase - ==================================================================
-13:03:50.479  INFO  tests.TestBase - End of method -->smokeTest
-13:03:50.485  INFO  tests.TestBase - Start method -->quicktest
-13:03:50.486  INFO  tests.TestBase - Test Start with Data -->[]
-13:03:50.486  INFO  tests.TestBase - ==================================================================
-13:03:50.488  INFO  tests.TestBase - End of method -->quicktest
-13:10:12.655  INFO  manager.AppManager - Start in browser FIREFOX
-13:10:13.931  INFO  tests.TestBase - Start method -->smokeTest
-13:10:13.932  INFO  tests.TestBase - Test Start with Data -->[]
-13:10:13.932  INFO  tests.TestBase - ==================================================================
-13:10:13.941  INFO  tests.TestBase - End of method -->smokeTest
-13:10:13.946  INFO  tests.TestBase - Start method -->quicktest
-13:10:13.947  INFO  tests.TestBase - Test Start with Data -->[]
-13:10:13.955  INFO  tests.TestBase - ==================================================================
-13:10:13.957  INFO  tests.TestBase - End of method -->quicktest
-13:10:13.959  INFO  tests.TestBase - Start method -->loginTestBase
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LoginTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-08-12T10:10:24" hostname="MBP-Taya.lan" time="39.769">
+  <properties/>
+  <testcase name="loginTestBase" classname="tests.LoginTest" time="1.571"/>
+  <testcase name="loginTestDP_CSV[0](User{email='noa@gmail.com', password='Nnoa12345$'})" classname="tests.LoginTest" time="1.012"/>
+  <testcase name="loginTestDP_CSV[1](User{email='noa@gmail.com', password='Nnoa12345$'})" classname="tests.LoginTest" time="1.03"/>
+  <testcase name="loginTestDP_CSV[2](User{email='noa@gmail.com', password='Nnoa12345$'})" classname="tests.LoginTest" time="0.989"/>
+  <testcase name="loginTestDataProvider[0](noa@gmail.com, Nnoa12345$)" classname="tests.LoginTest" time="3.005"/>
+  <testcase name="loginTestDataProvider[1](sonya@gmail.com, Ss12345$)" classname="tests.LoginTest" time="3.004"/>
+  <testcase name="loginTestDataProvider[2](noa@gmail.com, Nnoa12345$)" classname="tests.LoginTest" time="2.99"/>
+  <testcase name="loginTestDataProviderClass[0](noa@gmail.com, Nnoa12345$)" classname="tests.LoginTest" time="3.006"/>
+  <testcase name="loginTestDataProviderClass[1](sonya@gmail.com, Ss12345$)" classname="tests.LoginTest" time="3.002"/>
+  <testcase name="loginTestDataProviderClass[2](noa@gmail.com, Nnoa12345$)" classname="tests.LoginTest" time="3.001"/>
+  <testcase name="loginTestPositiveNewContact" classname="tests.LoginTest" time="3.015"/>
+  <testcase name="loginTestWithWrongPassword" classname="tests.LoginTest" time="11.002"/>
+  <system-out><![CDATA[13:10:13.959  INFO  tests.TestBase - Start method -->loginTestBase
 13:10:13.959  INFO  tests.TestBase - Test Start with Data -->[]
 13:10:13.959  INFO  tests.TestBase - ==================================================================
 13:10:13.960  INFO  manager.MyListener - Start find element by -->By.xpath: //button[text()='Sign Out']
@@ -270,3 +249,6 @@
 13:10:53.757  INFO  manager.MyListener - Start find element by -->By.xpath: //button[text()='Sign Out']
 13:11:03.772  INFO  manager.MyListener - The element -->By.xpath: //button[text()='Sign Out']was found
 13:11:03.776  INFO  tests.TestBase - End of method -->loginTestWithWrongPassword
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
