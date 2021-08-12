@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.QuickTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T10:03:50" hostname="MBP-Taya.lan" time="0.0">
+  <properties/>
+  <testcase name="quicktest" classname="tests.QuickTest" time="0.0"/>
+  <system-out><![CDATA[13:03:50.485  INFO  tests.TestBase - Start method -->quicktest
+13:03:50.486  INFO  tests.TestBase - Test Start with Data -->[]
+13:03:50.486  INFO  tests.TestBase - ==================================================================
+Im Quick test
+13:03:50.488  INFO  tests.TestBase - End of method -->quicktest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
