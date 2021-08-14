@@ -1,10 +1,10 @@
 manager/AppManager.java
  manager.AppManager
+manager/ContactHelper.java
+ manager.ContactHelper
 models/Contact.java
  models.Contact
  models.Contact$ContactBuilder
-manager/ContactHelper.java
- manager.ContactHelper
 models/User.java
  models.User
 manager/HelperBase.java

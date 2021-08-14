@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AddContactTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-13T14:59:37" hostname="DESKTOP-N57B5CL" time="9.155">
-  <properties/>
-  <testcase name="addContactTestBase" classname="tests.AddContactTest" time="3.516"/>
-  <testcase name="addContactTestBase" classname="tests.AddContactTest" time="2.78"/>
-  <testcase name="addContactTestBase" classname="tests.AddContactTest" time="2.787"/>
-  <system-out><![CDATA[17:59:25.396  INFO  tests.TestBase - Start method -->addContactTestBase
+17:59:24.379  INFO  manager.AppManager - Start in browser CHROME
+17:59:25.396  INFO  tests.TestBase - Start method -->addContactTestBase
 17:59:25.397  INFO  tests.TestBase - Test Start with Data -->[]
 17:59:25.398  INFO  tests.TestBase - ==================================================================
 17:59:25.401  INFO  manager.MyListener - Start find element by -->By.xpath: //button[text()='Sign Out']
@@ -35,7 +30,7 @@
 17:59:39.739  INFO  manager.MyListener - The element -->By.xpath: //button/bwas found
 17:59:39.844  INFO  manager.MyListener - Start find element by -->By.xpath: //h3
 17:59:40.894  INFO  manager.MyListener - The element -->By.xpath: //h3was found
-123456357717:59:41.051  INFO  tests.TestBase - End of method -->addContactTestBase
+17:59:41.051  INFO  tests.TestBase - End of method -->addContactTestBase
 17:59:41.054  INFO  tests.TestBase - Start method -->addContactTestBase
 17:59:41.054  INFO  tests.TestBase - Test Start with Data -->[]
 17:59:41.054  INFO  tests.TestBase - ==================================================================
@@ -59,7 +54,7 @@
 17:59:43.062  INFO  manager.MyListener - The element -->By.xpath: //button/bwas found
 17:59:43.163  INFO  manager.MyListener - Start find element by -->By.xpath: //h3
 17:59:43.685  INFO  manager.MyListener - The element -->By.xpath: //h3was found
-123456358117:59:43.860  INFO  tests.TestBase - End of method -->addContactTestBase
+17:59:43.860  INFO  tests.TestBase - End of method -->addContactTestBase
 17:59:43.862  INFO  tests.TestBase - Start method -->addContactTestBase
 17:59:43.862  INFO  tests.TestBase - Test Start with Data -->[]
 17:59:43.863  INFO  tests.TestBase - ==================================================================
@@ -83,7 +78,4 @@
 17:59:45.887  INFO  manager.MyListener - The element -->By.xpath: //button/bwas found
 17:59:46.000  INFO  manager.MyListener - Start find element by -->By.xpath: //h3
 17:59:46.473  INFO  manager.MyListener - The element -->By.xpath: //h3was found
-123456358317:59:46.685  INFO  tests.TestBase - End of method -->addContactTestBase
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
+17:59:46.685  INFO  tests.TestBase - End of method -->addContactTestBase
